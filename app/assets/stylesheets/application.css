@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+ @import './reset.css';
+
+ /* Paul Irish Border Box Resizing */
+
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+nav {
+  background-color: aquamarine;
+  padding: 1em;
+}
+
+nav ul {
+  display: block;
+  text-align: right;
+}
+
+nav li {
+  display: inline;
+  padding: 0em .25em;
+}
