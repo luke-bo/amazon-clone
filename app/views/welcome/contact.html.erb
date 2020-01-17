@@ -1,2 +1,9 @@
-<h1>Welcome#contact</h1>
-<p>Find me in app/views/welcome/contact.html.erb</p>
+<h3>Need a hand? Here's how you can get in touch!</h3>
+
+
+<%= form_with url: contact_path, local: true, class: "form" do |f| %>
+  <%= f.text_field :name %>
+  <%= f.email_field :email %>
+  <%= f.text_area :message %>
+  <%= f.submit :submit%>
+<% end %>
