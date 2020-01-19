@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+1000.times do
+  Product.create(title: Faker::Commerce.product_name, description: Faker::Lorem.sentence(word_count: 10), price: Faker::Commerce.price(range: 0..200))
+end
+
+
+puts Cowsay.say("Generated #{Product.count} products", :frogs)
