@@ -98,3 +98,18 @@ form {
 form input, textarea {
   margin: 1em;
 }
+
+/* errors */
+
+.errors_container {
+  margin: auto;
+  background-color: rgba(255, 100, 93, .5);
+  max-width: 60%;
+  color: black;
+  padding: .5em 0em;
+}
+
+.error_messages {
+  text-align: center;
+}
+

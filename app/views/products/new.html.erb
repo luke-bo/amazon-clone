@@ -1,0 +1,21 @@
+<h1>Create a New Product</h1>
+
+<div class="errors_container">
+  <ul class="error_messages">
+    <% @product.errors.full_messages.each do |message|%>
+      <li><%=message%></li>
+    <% end %>
+  </ul>
+</div>
+
+
+<%= form_with model: @product, class: "product_form", local: true do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+  <%= f.submit "Create Product" %>
+<% end %>
+
